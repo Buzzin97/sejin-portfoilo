@@ -100,11 +100,7 @@ p {
   background-color: var(--color-violet);
   align-items: center;
   color: var(--color-white);
-<<<<<<< Updated upstream
   padding: 10px;
-=======
-  padding: 12px;
->>>>>>> Stashed changes
 } 
 
 .navbar__menu {

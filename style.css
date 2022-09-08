@@ -163,7 +163,6 @@ p {
 .section {
   padding: 50px;
   text-align: center;
-<<<<<<< Updated upstream
   max-width: 1200px;
   margin: auto;
 }
@@ -210,13 +209,16 @@ p {
   align-items: center;
 }
 
+.job__logo {
+  height: 50px;
+}
 .job__description {
   margin:0 16px;
   text-align: left;
 }
 
 .job__name,.job__period {
-  color: lightgrey;
+  color: var(--color-light-grey);
 }
 
 .job__name {
@@ -225,6 +227,4 @@ p {
 
 .job__period {
   font-size: var(--font-micro);
-=======
->>>>>>> Stashed changes
 }

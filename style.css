@@ -100,7 +100,11 @@ p {
   background-color: var(--color-violet);
   align-items: center;
   color: var(--color-white);
+<<<<<<< Updated upstream
   padding: 10px;
+=======
+  padding: 12px;
+>>>>>>> Stashed changes
 } 
 
 .navbar__menu {
@@ -159,6 +163,7 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+<<<<<<< Updated upstream
   max-width: 1200px;
   margin: auto;
 }
@@ -220,4 +225,6 @@ p {
 
 .job__period {
   font-size: var(--font-micro);
+=======
+>>>>>>> Stashed changes
 }

@@ -1,5 +1,6 @@
 # sejin-portfoilo
  html,css 
+ css 네이밍
  자바스크립트(바닐라)
 ```
 prettier  설치해도 안될 때 해결 방법

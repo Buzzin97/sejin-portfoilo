@@ -17,6 +17,7 @@
   --color-dark-violet: #4d377b;
   --color-dark-green: #769ba3;
   --color-light-green: #d2dcdd;
+  --color-pantone-puple: #6768ab;
 
   /* Font size */
   --font-large: 48px;
@@ -99,7 +100,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-violet);
+  background-color: var(--color-pantone-puple);
   align-items: center;
   color: var(--color-white);
   padding: 10px;
@@ -337,12 +338,54 @@ p {
 }
 
 .project {
+  position: relative;
   width: 280px;
   height: 250px;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--color-violet);
 }
 
 .project__img {
   max-width: 100%;
   max-height: 100%;
 }
+
+.project__desciption {
+  position: absolute;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.project:hover .project__desciption {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+.project__desciption h3 {
+  color: var(--color-white);
+}
+
+.project__desciption h3::after {
+  content: '';
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  margin-left: -12px;
+  margin-top: 8px;
+  background-color: var(--color-dark-white);
+}
+

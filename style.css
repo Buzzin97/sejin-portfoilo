@@ -183,8 +183,8 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-violet);
-  border: 1px solid var(--color-violet);
+  color: var(--color-pantone-puple);
+  border: 1px solid var(--color-pantone-puple);
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -435,6 +435,7 @@ p {
 /* Contact */
 #contact {
   background-color: var(--color-pantone-puple);
+  padding: 15px;
 }
 
 .contact__title,

@@ -106,11 +106,13 @@ p {
   align-items: center;
   padding: 8px;
   color: var(--color-white);
-  transition: all var(--animation-duration) ease-in-out;
+  transition: all 400ms ease-in-out;
+  z-index: 1;
 } 
 
 #navbar.navbar--dark {
   background-color: var(--color-pantone-puple);
+  padding: 6px;
 }
 
 .navbar__menu {

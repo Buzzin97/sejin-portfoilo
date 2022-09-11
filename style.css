@@ -129,6 +129,15 @@ p {
   background-color: var(--color-dark-violet);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /* Home */
 #home {
   background: url('./imgs/homeimg.png') center/cover no-repeat;
@@ -458,3 +467,43 @@ p {
   color: var(--color-dark-violet);
   transition: all var(--animation-duration) ease-in-out;
 }
+
+/* For below 768px screen width */
+@media  screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimoial__avatar {
+    width: 80px;
+    height: 80px;
+  }
+}
+

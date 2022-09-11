@@ -98,13 +98,20 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pantone-puple);
+  background-color: transparent;
   align-items: center;
+  padding: 8px;
   color: var(--color-white);
-  padding: 10px;
+  transition: all var(--animation-duration) ease-in-out;
 } 
+
+#navbar.navbar--dark {
+  background-color: var(--color-pantone-puple);
+}
 
 .navbar__menu {
   display: flex;
@@ -141,7 +148,8 @@ p {
 /* Home */
 #home {
   background: url('./imgs/homeimg.png') center/cover no-repeat;
-  padding: 60px;
+  padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 

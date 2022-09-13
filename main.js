@@ -1,8 +1,6 @@
 "use strict";
 // navbar 스크롤링에 따라 색 변하기
 const navbar = document.querySelector('#navbar');
-const home = document.querySelector('#home');
-const homeSize = home.getBoundingClientRect().height
 const navbarHight = navbar.getBoundingClientRect().height
 document.addEventListener('scroll', () => {
   if(window.scrollY > navbarHight) {

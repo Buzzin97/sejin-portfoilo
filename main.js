@@ -58,6 +58,12 @@ workBtnContainer.addEventListener('click', (e) => {
   if(filter == null) {
     return;
   }
+
+  // 버튼 눌르면 그 선택된 창에 색깔을 유지하기
+  const active = document.querySelector('.category__btn.selected')
+  active.classList.remove('selected')
+  e.target.classList.add('selected')
+
   projectContainer.classList.add('anim-out')
   setTimeout(() => {
     projects.forEach((project) => {

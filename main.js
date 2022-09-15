@@ -57,7 +57,7 @@ arrowUp.addEventListener('click', () => {
   scrollIntoView('#home')
 })
 
-// Projects
+ // Projects
 const workBtnContainer = document.querySelector('.work__categories')
 const projectContainer = document.querySelector('.work__projects')
 const projects = document.querySelectorAll('.project')

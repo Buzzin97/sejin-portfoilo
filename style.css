@@ -531,6 +531,11 @@ p {
     display: none;
   }
 
+  .navbar__menu__item{
+    width: 100%;
+    text-align: center;
+  }
+
   .navbar__menu.open {
     display:block;
   }

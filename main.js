@@ -60,10 +60,12 @@ workBtnContainer.addEventListener('click', (e) => {
   }
 
   // 버튼 눌르면 그 선택된 창에 색깔을 유지하기
-  const active = document.querySelector('.category__btn.selected')
-  active.classList.remove('selected')
-  e.target.classList.add('selected')
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected');
 
+  // 카테고리 누르면 그에 해당하는 정보만 나오게 해주기 + 애니메이션
   projectContainer.classList.add('anim-out')
   setTimeout(() => {
     projects.forEach((project) => {

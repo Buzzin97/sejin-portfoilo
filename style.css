@@ -313,7 +313,7 @@ p {
   margin: 40px;
 }
 
-.category__btn.selceted,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-violet);
   color: var(--color-white);
